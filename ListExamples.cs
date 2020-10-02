@@ -24,13 +24,27 @@ namespace ListExamplesNS
             int maxima = x[0];
             for (int i = 1; i < x.Count; i++)
             {
-                if (x[i] > maxima) {
+                if (x[i] > maxima)
+                {
                     maxima = x[i];
                 }
             }
             return maxima;
         }
-        static int SumList2(List<int> x)
+            static int MinOfList(List<int> x)
+            {
+                int minima = x[0];
+                for (int i = 1; i < x.Count; i++)
+                {
+                    if (x[i] < minima)
+                    {
+                        minima = x[i];
+                    }
+                }
+                return minima;
+            }
+
+            static int SumList2(List<int> x)
         {
             // Method 2 - index items in list
             int total = 0;
